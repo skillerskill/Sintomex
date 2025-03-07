@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 1rem; /* Adiciona espaçamento nas laterais para telas menores */
+}
+
+.signupBox {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: black;
+}
+
+.signupButton {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%; /* Botão ocupa 100% da largura */
+}
+
+.signupButton:hover {
+    background-color: #0056b3;
+}
+
+.loginText {
+    margin-top: 1.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.loginLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas menores que 768px (Tablets e Celulares) */
+@media (max-width: 768px) {
+    .signupBox {
+        padding: 1.5rem; /* Reduz o padding para telas menores */
+    }
+
+    .title {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .subtitle {
+        font-size: 1.3rem; /* Reduz o tamanho do subtítulo */
+    }
+
+    .input {
+        padding: 0.7rem; /* Reduz o padding dos inputs */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos inputs */
+    }
+
+    .signupButton {
+        padding: 0.7rem; /* Reduz o padding do botão */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+/* Telas menores que 480px (Celulares pequenos) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem; /* Reduz o padding do container */
+    }
+
+    .signupBox {
+        padding: 1rem; /* Reduz ainda mais o padding da caixa de cadastro */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Título menor para celulares */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Subtítulo menor para celulares */
+    }
+
+    .input {
+        padding: 0.6rem; /* Inputs mais compactos */
+        font-size: 0.8rem; /* Fonte menor para inputs */
+    }
+
+    .signupButton {
+        padding: 0.6rem; /* Botão mais compacto */
+        font-size: 0.8rem; /* Fonte menor para o botão */
+    }
+
+    .loginText {
+        font-size: 0.8rem; /* Texto menor para celulares */
+    }
+}
